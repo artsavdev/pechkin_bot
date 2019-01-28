@@ -1,0 +1,42 @@
+{
+  "name": "pechkin_bot",
+  "version": "1.0.0",
+  "description": "Release bot notifier",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon --inspect index.js",
+    "db:start": "docker run -d --name mongodb -p 27017:27017 mongo:latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artsavdev/pechkin_bot.git"
+  },
+  "engines": {
+    "node": "11.8.0"
+  },
+  "keywords": [
+    "bot",
+    "release",
+    "github",
+    "rss",
+    "atom"
+  ],
+  "author": "Artem Savelev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artsavdev/pechkin_bot/issues"
+  },
+  "homepage": "https://github.com/artsavdev/pechkin_bot#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^6.2.0",
+    "koa": "^2.6.2",
+    "koa-router": "^7.4.0",
+    "mongoose": "^5.4.7"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "nodemon": "^1.18.9"
+  }
+}
